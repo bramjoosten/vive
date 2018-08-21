@@ -4,7 +4,7 @@ backend:
   branch: master # Branch to update (optional; defaults to master)
 
 # This line should *not* be indented
-media_folder: "/static/uploads" # Media files will be stored in the repo under /uploads
+media_folder: "site/static/uploads" # Media files will be stored in the repo under /uploads
 public_folder: "/uploads" # The src attribute for uploaded media will begin with /uploads
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
