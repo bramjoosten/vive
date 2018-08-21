@@ -1,0 +1,59 @@
+.signup {
+    position: relative;
+    height: 375px;
+    
+    .background{
+        position: absolute;
+        top: 0;
+        left:0;
+        width: 100vw;
+        
+    }
+    .wrap{
+        position: absolute;
+        flex-direction: column; 
+    }
+    h2 {
+        font-size: 50px;
+        font-family: 'Meriva Extra';
+        color: white;
+        
+    }
+    p{
+        font-family: 'Danzza Regular';
+        color: white;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    .mc_fieldset{
+        display: flex;
+        flex-direction: column;
+        color:white;
+        
+    }
+
+    label.checkbox{
+        margin-bottom: 10px; 
+    }
+    .gdpr-mergeRow p{
+        font-size: 12px;
+
+    }
+    input#mce-EMAIL,input#mce-FNAME{
+        opacity:0.82;
+        margin-bottom:30px;
+        font-size: 20px;
+    }
+    
+    input#mc-embedded-subscribe{
+        margin:auto;
+    }
+    
+}
+#mc_embed_signup input.mce_inline_error{
+    margin-bottom:10px;
+    font-family: $font-family-1;
+    color:red;
+}

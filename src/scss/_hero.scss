@@ -1,0 +1,39 @@
+.hero{
+    padding: 0;
+    background:url('/herobg.jpg') no-repeat;
+    background-size:contain;
+    background-position: bottom;
+    height: 100vh;
+    background-color: #acacac;
+    overflow-x: hidden;
+    @media(min-width:768px){
+        background:url('/herobg-desktop.jpg') no-repeat;
+        background-size:cover;
+    }
+    .wrap{
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    h1{
+        font-family: $font-family-2;
+        font-size:60px;
+        color:white;
+        .stroke{
+            -webkit-text-stroke: white;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-fill-color: transparent;
+            -webkit-paint-order: stroke fill;
+        }
+        @media(min-width:768px){
+            font-size:109px;
+            .stroke{
+                -webkit-text-stroke-width: 2px;
+            }
+        }
+    }
+    p{
+        font-family: $font-family-1;
+        color:white;
+        font-size: $font-size-1;
+    }
+}

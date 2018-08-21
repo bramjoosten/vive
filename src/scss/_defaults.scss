@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    -webkit-font-smoothing: antialiased;
+    margin: auto;
+    overflow-x: hidden;
+    
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 80vh;
+    padding-top: 30px;
+}
+
+.wrap{
+    max-width: 1200px;
+    padding: 0 20px;
+    display: flex;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 30px;
+    font-family: 'Meriva Extra';
+}
+
+h2 {
+    font-size: 60px;
+}
+
+p {
+    font-family: 'separat bold';
+    font-size: 28px;
+}
+
+
+
+fieldset {
+    border: none;
+}
+
+label,
+input {
+    font-family: $font-family-1;
+    padding:15px;
+}
+
+input[type="checkbox"]{
+    -webkit-appearance: none;
+	background-color: #transparent;
+	border: 2px solid #cacece;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+    padding: 9px;
+    margin-right:10px;
+	border-radius: 3px;
+	display: inline-block;
+    position: relative;
+    top:5px;
+    border-radius:0;
+}
+
+.logo {
+    width: 100px;
+}

@@ -1,0 +1,47 @@
+button, .button {
+    border:none;
+    margin:auto;
+
+    &.primary, &.secondary{
+        display: flex;
+        flex-direction: column;
+        padding:15px;
+        min-width: 150px;
+        align-items: center;
+        justify-content: center;
+        background:$purple;
+        color:white;
+        font-family:$font-family-1;
+        border-radius: 10px;
+
+    }
+
+    &.secondary{
+        display: flex;
+        flex-direction: column;
+        padding:15px;
+        min-width: 150px;
+        align-items: center;
+        justify-content: center;
+        font-family:$font-family-1;
+        border-radius: 10px;
+        background:$grey;
+        color:$purple;
+    }
+    
+    
+    &.play{
+        background:url('/play.png');
+        background-color:transparent;
+        background-size:cover;
+        height: calc(86px/2);
+        width: calc(86px/2);
+        cursor: pointer;
+    }
+    &.hamburger{
+        background:transparent;
+    }
+}
+.button{
+    text-decoration: none;
+}
