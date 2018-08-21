@@ -1,0 +1,12 @@
+{{define "main"}}
+<section class="blog-summary">
+<div class="wrap">
+    {{.Title}}
+    {{range .Pages}}
+        <h3>
+            {{.Title}}
+        </h3>
+    {{end}}
+</div>
+</section>
+{{end}}
