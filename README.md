@@ -1,4 +1,10 @@
-# Victor Hugo
+# Vive
+
+1. needs yarn and node
+2. yarn install
+
+to develop: yarn start
+to build: yarn build
 
 **A Hugo boilerplate for creating truly epic websites**
 
