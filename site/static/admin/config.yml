@@ -1,0 +1,18 @@
+backend:
+  name: github
+  branch: master # Branch to update (optional; defaults to master)
+
+# This line should *not* be indented
+media_folder: "static/uploads" # Media files will be stored in the repo under /uploads
+public_folder: "/uploads" # The src attribute for uploaded media will begin with /uploads
+collections:
+  - name: "blog" # Used in routes, e.g., /admin/collections/blog
+    label: "Blog" # Used in the UI
+    folder: "site/content/blog" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Featured Image", name: "thumbnail", widget: "image"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
